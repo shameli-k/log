@@ -1,0 +1,10 @@
+logging:
+  level:
+    okhttp3:
+      okHttpClient: trace
+  file:
+    name: ./logs/application.log
+    max-history: 30
+    max-size: 50MB
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} LogApplication [%thread] %-5level %logger{36}.%M:%L - %msg%n"
